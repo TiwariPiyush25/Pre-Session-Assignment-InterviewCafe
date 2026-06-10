@@ -1,0 +1,15 @@
+class Solution {
+    HashMap<Integer,Integer> chache=new HashMap<>();
+    public int climbStairs(int n) {
+        if(n<=2) return n;
+
+        if(chache.containsKey(n)){
+            return chache.get(n);
+        }
+        
+        int ans=climbStairs(n-1)+climbStairs(n-2);
+        chache.put(n,ans);
+
+        return ans;
+    }
+}
