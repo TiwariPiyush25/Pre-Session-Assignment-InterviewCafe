@@ -138,3 +138,24 @@ This gives:
 3. **Iterative DP with Two Variables** → `O(n)` time, `O(1)` space
 
 
+# part 3 : Complexity Quiz
+
+| Concept            | Expected Time Complexity |
+| ------------------ | ------------------------ |
+| **Single Loop**    | **O(n)**                 |
+| **Nested Loop**    | **O(n²)**                |
+| **Binary Search**  | **O(log n)**             |
+| **Merge Sort**     | **O(n log n)**           |
+| **HashMap Lookup** | **O(1)** average case    |
+| **DFS Traversal**  | **O(V + E)**             |
+| **BFS Traversal**  | **O(V + E)**             |
+
+### Explanation
+* **Single Loop:** Visits each element once → **O(n)**.
+* **Nested Loop:** For each element, another loop runs over the elements → **O(n²)**.
+* **Binary Search:** Halves the search space every step → **O(log n)**.
+* **Merge Sort:** Divides the array into halves and merges them → **O(n log n)**.
+* **HashMap Lookup:** Accessing a key is constant time on average → **O(1)**.
+* **DFS Traversal:** Every vertex and edge is processed once → **O(V + E)**.
+* **BFS Traversal:** Similarly, each vertex and edge is visited once → **O(V + E)**.
+Here, **V = number of vertices (nodes)** and **E = number of edges** in the graph.
